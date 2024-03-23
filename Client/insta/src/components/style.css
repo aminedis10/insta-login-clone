@@ -1,0 +1,42 @@
+.auth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 50px 0px 50px;
+}
+
+.left {
+  flex: 0.5;
+  text-align: center;
+}
+
+.right {
+  flex: 0.5;
+}
+.left > img {
+  width: 400px;
+  margin-top: 40px;
+}
+.more {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+span {
+  font-weight: 500;
+}
+
+.more > span > button {
+  background: 0;
+  color: #0095f6;
+  font-weight: bolder;
+  border: 0;
+}
+
+.more > span > button:hover {
+  cursor: pointer;
+}
