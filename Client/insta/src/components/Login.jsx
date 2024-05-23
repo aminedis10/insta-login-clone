@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Login2 from "./Login2";
 import "./style.css";
 import SignUp from "./SignUp";
+import Button from "@mui/material/Button";
+import FacebookIcon from "@mui/icons-material/Facebook";
+
 function Login() {
   const [active, setActive] = useState("login");
   return (
@@ -9,6 +12,7 @@ function Login() {
       <div className="left">
         <img src="insta.png" alt="" />
       </div>
+
       <div className="right">
         {active === "login" ? <Login2 /> : <SignUp />}
 
@@ -24,6 +28,9 @@ function Login() {
               <button onClick={() => setActive("login")}>Login</button>
             </span>
           )}
+          <Button variant="outlined" startIcon={<FacebookIcon />}>
+            login with facebook
+          </Button>
         </div>
       </div>
     </div>
